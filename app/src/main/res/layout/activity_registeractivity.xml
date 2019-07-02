@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registeractivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:elevation="5dp"
+        android:theme="@style/ToolbarTheme"
+        android:background="@drawable/header_register"
+        android:id="@+id/bgHeader"/>
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:transitionName="tvLogin"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:text="Sign Up"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- This is first screen-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@id/bgHeader"
+        android:layout_margin="10dp"
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="Your Personal Information"
+                    android:textColor="@color/colorRed"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/baloo" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorRed"/>
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPersonName" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorRed"/>
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="text" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorRed"/>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPassword" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retype Password"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorRed"/>
+                <EditText
+                    android:id="@+id/cpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv"
+            android:layout_alignLeft="@+id/cv"
+            android:layout_alignRight="@+id/cv"
+            android:layout_marginTop="-30dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+            <Button
+                android:id="@+id/nextbutton"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="Next"
+                android:background="@drawable/bg_ui"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- This is second screen-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@id/bgHeader"
+        android:id="@+id/rlayout1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select your Blood Type"
+                    android:fontFamily="@font/baloo"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorRed"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    >
+                    <Button
+                        android:id="@+id/agroup"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="A+"
+                        android:fontFamily="@font/cantora_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/bg_button_back"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/angroup"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="A-"
+                        android:fontFamily="@font/cantora_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/bg_button_back"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/bgroup"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="B+"
+                        android:fontFamily="@font/cantora_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/bg_button_back"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/bngroup"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="B-"
+                        android:fontFamily="@font/cantora_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/bg_button_back"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/ogroup"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="O+"
+                        android:fontFamily="@font/cantora_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/bg_button_back"
+                        android:textStyle="bold"
+                        tools:ignore="UnusedAttribute" />
+                    <Button
+                        android:id="@+id/ongroup"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="O-"
+                        android:fontFamily="@font/cantora_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/bg_button_back"
+                        android:textStyle="bold"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/cv3"
+            android:id="@+id/cvGender"
+            android:layout_marginTop="20dp"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select your Gender"
+                    android:fontFamily="@font/baloo"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorRed"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    >
+                    <Button
+                        android:id="@+id/male"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="Male"
+                        android:fontFamily="@font/cantora_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/bg_button_back"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/female"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="Female"
+                        android:fontFamily="@font/cantora_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/bg_button_back"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cvGender"
+            android:layout_alignLeft="@+id/cv3"
+            android:layout_alignRight="@+id/cv3"
+            android:layout_marginTop="-30dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+            <Button
+                android:id="@+id/bloodbutton"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="Next"
+                android:background="@drawable/bg_ui"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- This is third Screen-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@id/bgHeader"
+        android:id="@+id/rlayout2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click to save your location"
+                    android:fontFamily="@font/baloo"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorRed"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/card_bg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/location"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/bg_button_back"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_my_location_black_24dp"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv4"
+            android:layout_alignLeft="@+id/cv4"
+            android:layout_alignRight="@+id/cv4"
+            android:layout_marginTop="-30dp"
+            android:elevation="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+            <Button
+                android:id="@+id/signupbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:background="@drawable/bg_ui"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--This is maps-->
+    <RelativeLayout
+        android:layout_below="@id/bgHeader"
+        android:visibility="gone"
+        android:id="@+id/rmaps"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map_register"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.skyfishjy.library.RippleBackground
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ripple_bg"
+            app:rb_color="#0099CC"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="3000"
+            app:rb_scale="6">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:translationY="-18dp"
+                android:src="@drawable/ic_placeholder"
+                tools:ignore="ContentDescription,VectorDrawableCompat" />
+        </com.skyfishjy.library.RippleBackground>
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            style="@style/MaterialSearchBarLight"
+            app:mt_speechMode="false"
+            app:mt_hint="Search a place"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchBar"
+            android:layout_margin="16dp"
+            app:mt_navIconEnabled="true"
+            android:elevation="5dp"
+            android:outlineProvider="bounds"
+            app:mt_placeholder="Search a place"/>
+
+        <Button
+            android:id="@+id/btn_saveLoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:textStyle="bold"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="Save Location"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+    <!-- This is the fourth screen-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@id/bgHeader"
+        android:id="@+id/rlayout3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="Enter Your Mobile Number"
+                    android:textColor="@color/colorRed"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/baloo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/cc"
+                        android:layout_marginTop="14dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp">
+                    </Spinner>
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="190dp"
+                        android:padding="10dp"
+                        android:digits="0123456789"
+                        android:maxLength="10"
+                        android:layout_gravity="center"
+                        android:hint="Enter Mobile Number"
+                        android:fontFamily="@font/cantora_one"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv1"
+            android:layout_alignLeft="@+id/cv1"
+            android:layout_alignRight="@+id/cv1"
+            android:layout_marginTop="-30dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+            <Button
+                android:id="@+id/confirmbutton"
+                android:layout_width="250dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:text="Confirm"
+                android:background="@drawable/bg_ui"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!-- This is the last screen-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@id/bgHeader"
+        android:id="@+id/rlayout4"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:text="Six Digit Code has been sent"
+            android:textSize="16sp"
+            android:fontFamily="@font/baloo"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorRed"
+            />
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please wait for the code to appear"
+                    android:fontFamily="@font/baloo"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorRed"/>
+                <EditText
+                    android:id="@+id/verifycode"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:digits="0123456789"
+                    android:maxLength="10"
+                    android:hint="Code here"
+                    android:fontFamily="@font/cantora_one"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv2"
+            android:layout_alignLeft="@+id/cv2"
+            android:layout_alignRight="@+id/cv2"
+            android:layout_marginTop="-30dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+            <Button
+                android:id="@+id/verifybutton"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Confirm"
+                android:background="@drawable/bg_ui"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                />
+        </RelativeLayout>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressbar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-200dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

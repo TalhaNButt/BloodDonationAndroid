@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".HomeActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/f1content">
+
+    </FrameLayout>
+    <android.support.design.widget.NavigationView
+    app:headerLayout="@layout/header"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    app:itemTextColor="@color/darkgray"
+    app:itemIconTint="@color/darkgray"
+    app:menu="@menu/drawermenu"
+    android:layout_gravity= "start"
+        android:id="@+id/nvDrawer"
+    >
+</android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

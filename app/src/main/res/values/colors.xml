@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#FF0000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorTom">#FF6347</color>
+    <color name="colorDark">#8B0000</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yellow">#ffb300</color>
+    <color name="green" tools:ignore="MissingDefaultResource">#00bfa5</color>
+    <color name="darkgray">#6c6c6c</color>
+    <color name="lightred">#F08080</color>
+    <color name="address">#2f7092</color>
+    <color name="follower">#0d5d98</color>
+    <color name="heading">#3797df</color>
+    <color name="solidcircle">#aaffffff</color>
+    <color name="circleborder">#50ffffff</color>
+    <color name="gradend">#67efc8</color>
+    <color name="gradstart">#63c9ff</color>
+    <color name="followersbg">#65dce5</color>
+    <color name="followingbg">#49beff</color>
+    <color name="grey">#e5e5e5</color>
+    <color name="colorPrimary1">#ffffff</color>
+    <color name="colorPrimaryDark1">#ffffff</color>
+    <color name="colorAccent1">#258bd6</color>
+    <color name="card_bg_color">#f6f6f6</color>
+    <color name="card_bg_dark_color">#0e0e0e</color>
+    <color name="title_text_color">#258bd6</color>
+    <color name="content_text_color">#999da4</color>
+    <color name="white" >#ffffff</color>
+    <color name="black" >#000000</color>
+    <color name="bluelight" >#49acd5</color>
+    <color name="orange" >#eaad43</color>
+
+
+</resources>

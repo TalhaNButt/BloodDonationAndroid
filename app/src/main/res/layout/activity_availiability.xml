@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvailiabilityActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="5dp"
+        android:theme="@style/ToolbarTheme"
+        android:background="@drawable/header1"
+        android:id="@+id/headerrequest"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:text="Change Your Availiabilty Status"
+        android:fontFamily="@font/baloo"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="You will not be notified if you set your availiability status to off"
+        android:textSize="16sp"
+        android:fontFamily="@font/baloo"
+        android:layout_below="@+id/headerrequest"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorRed"
+        />
+    <RelativeLayout
+        android:id="@+id/relayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerrequest"
+        android:gravity="center">
+        <android.support.v7.widget.CardView
+            android:layout_margin="15dp"
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Availiability"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/cantora_one"
+                    android:textColor="@color/colorRed"
+                    app:thumbTint="@color/colorRed"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>
